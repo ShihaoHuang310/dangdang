@@ -17,11 +17,11 @@ if(mode.mode === 'development'){
   server ={
     host:envMap.VITE_HOST,
     port:+envMap.VITE_PORT,
-    proxy:{
-      [envMap.VITE_BASE_URL]:{
-        target: envMap.VITE_PROXY_DOMAIN
-      }
-    } 
+    // proxy:{
+    //   [envMap.VITE_BASE_URL]:{
+    //     target: envMap.VITE_PROXY_DOMAIN
+    //   }
+    // }
 
   }
 }else if(mode.mode === 'production'){
